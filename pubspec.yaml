@@ -1,0 +1,78 @@
+name: namaz_vakti
+description: Ezan vakti, kıble yönü ve hicri takvim uygulaması
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State Management
+  provider: ^6.1.1
+
+  # HTTP & Networking
+  http: ^1.1.0
+  connectivity_plus: ^5.0.2
+
+  # Location
+  geolocator: ^11.0.0
+  geocoding: ^3.0.0
+
+  # Notifications
+  flutter_local_notifications: ^17.2.1
+  timezone: ^0.9.4
+  flutter_timezone: ^1.0.8
+
+  # Compass / Sensors
+  flutter_compass: ^0.8.0
+  sensors_plus: ^4.0.2
+
+  # Local Storage / Caching
+  shared_preferences: ^2.2.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Internationalization
+  intl: ^0.19.0
+
+  # Audio
+  just_audio: ^0.9.40
+
+  # UI
+  lottie: ^3.1.0
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.0.10+1
+  shimmer: ^3.0.0
+
+  # Permissions
+  permission_handler: ^11.3.1
+
+  # Date/Time
+  hijri: ^2.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.7
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/sounds/
+    - assets/icons/
+    - assets/images/
+    - assets/translations/
+
+  fonts:
+    - family: Scheherazade
+      fonts:
+        - asset: assets/fonts/ScheherazadeNew-Regular.ttf
